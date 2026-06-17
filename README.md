@@ -378,7 +378,7 @@ LOG_LEVEL=INFO
 ## 🛠️ Troubleshooting
 
 <details>
-<summary><b>❌ Backend won't start</b></summary>
+
 
 - Check `GROQ_API_KEY` is set correctly in `.env`
 - Verify port 8000 is free: `lsof -i :8000`
@@ -386,7 +386,7 @@ LOG_LEVEL=INFO
 </details>
 
 <details>
-<summary><b>❌ Rate limit errors (HTTP 429)</b></summary>
+
 
 - Wait 60 seconds between bursts
 - Check current counts at `GET /metrics`
@@ -394,7 +394,7 @@ LOG_LEVEL=INFO
 </details>
 
 <details>
-<summary><b>❌ Circuit breaker open</b></summary>
+
 
 - Check `GET /circuit-status`
 - Verify your Groq API key is valid and has quota
@@ -402,7 +402,7 @@ LOG_LEVEL=INFO
 </details>
 
 <details>
-<summary><b>❌ RAG not working</b></summary>
+
 
 - Run `python setup_rag.py` to build the vector DB
 - Check `GET /rag-status` for details
@@ -410,7 +410,7 @@ LOG_LEVEL=INFO
 </details>
 
 <details>
-<summary><b>❌ Frontend shows blank page</b></summary>
+
 
 - Check browser console for errors
 - Ensure backend is running on port 8000
